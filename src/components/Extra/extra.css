@@ -1,0 +1,28 @@
+#extra {
+  height: auto;
+  min-height: 100vh;
+  background: green;
+  position: relative
+}
+
+#extra-wrapper {
+  height: auto;
+  min-height: 100vh; 
+  position: relative;
+  z-index: 1;
+  background:purple;
+}
+
+#extra-bg-img {
+  position: absolute;
+  background: pink;
+  z-index: -1;
+  width: 50%;
+  height: 30%;
+  bottom:0;
+  right:0
+}
+
+#extra-content {
+  color: yellow
+}
