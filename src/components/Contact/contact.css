@@ -1,7 +1,6 @@
 #contact {
   height: auto;
   min-height: 100vh;
-  background: green;
   position: relative
 }
 
@@ -10,12 +9,10 @@
   min-height: 100vh; 
   position: relative;
   z-index: 1;
-  background:red;
 }
 
 #contact-bg-img {
   position: absolute;
-  background: pink;
   z-index: -1;
   width: 50%;
   height: 30%;

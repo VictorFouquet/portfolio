@@ -1,48 +1,121 @@
 import React from "react";
 import "./extra.css";
+import img1 from "../../assets/art/1.png";
+import img2 from "../../assets/art/2.png";
+import img3 from "../../assets/art/3.png";
+import img4 from "../../assets/art/4.png";
+import img5 from "../../assets/art/5.png";
+import img6 from "../../assets/art/6.png";
+import img7 from "../../assets/art/7.png";
+import img8 from "../../assets/art/8.png";
+import img9 from "../../assets/art/9.png";
+import img10 from "../../assets/art/10.png";
+import img11 from "../../assets/art/11.png";
+import img12 from "../../assets/art/12.png";
+import img13 from "../../assets/art/13.png";
+import img14 from "../../assets/art/14.png";
+import img15 from "../../assets/art/15.png";
+import leftArrow from "../../assets/left-arrow.png";
+import rightArrow from "../../assets/right-arrow.png";
+import bgIllu from "../../assets/bgIllu.png";
 
 class Extra extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animating: false,
+      pics: [
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
+        img13,
+        img14,
+        img15
+      ]
+    };
+    this.handleLeftSlide = this.handleLeftSlide.bind(this);
+    this.handleRightSlide = this.handleRightSlide.bind(this);
+  }
+
+  handleLeftSlide = () => {
+    this.setState({animating: false})
+    let provPics = [...this.state.pics];
+    provPics.unshift(provPics.pop());
+    this.setState({
+      animating: true,
+    });
+    setTimeout(()=>{this.setState({pics: [...provPics], animating: false})}, 1100)
+  };
+
+  handleRightSlide = () => {
+    this.setState({animating: false})
+    let provPics = [...this.state.pics];
+    provPics.push(provPics.shift());
+    this.setState({
+      animating: true,
+    });
+    setTimeout(()=>{this.setState({pics: [...provPics], animating: false})}, 1100)
+  };
+
   render() {
-    return(
+    var anim = this.state.animating ? "img-animating" : "img"
+    return (
       <div id="extra">
         <div id="extra-wrapper">
-          <div id="extra-bg-img"></div>
+          <div id="extra-bg-img">
+          <img id="extra-illu-btm" src={bgIllu} alt="ça marche ap"></img>
+          </div>
           <div id="extra-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec mi enim. In sodales ut risus sed suscipit. Phasellus vel nisi quis urna posuere dictum eu a risus. Aenean lobortis maximus pulvinar. Fusce feugiat molestie nulla, sed tempor risus lacinia ac. Integer vel nibh tempus, consectetur nulla ac, ornare mauris. Fusce non quam velit. Ut malesuada purus id sagittis molestie. Praesent ultrices nunc id urna venenatis, sed tempus enim feugiat. Cras metus nulla, blandit efficitur congue ac, rhoncus porttitor tellus. Ut facilisis fermentum augue et commodo. Maecenas finibus arcu ut mauris mollis tempus. Curabitur eu ante sit amet arcu convallis malesuada at in tellus.
+            <img
+              className="arrow"
+              src={leftArrow}
+              alt="ça marche ap"
+              onClick={this.handleLeftSlide}
+            ></img>
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sit amet accumsan dolor. Nam massa odio, pharetra nec varius ut, feugiat nec odio. Proin id lacus ac lacus dapibus sagittis vitae ac ex. Donec et tristique sapien, non congue purus. In lacus mauris, vehicula non ex non, faucibus fermentum ex. Morbi fringilla a mi et pharetra. Ut at diam ligula. Integer egestas tincidunt consectetur. Aenean non diam elit. Nunc porta, eros non suscipit dapibus, lacus dui auctor erat, non tincidunt sapien neque eget mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id dapibus risus. In at tincidunt orci. Nulla id enim porttitor, ullamcorper mi tincidunt, pulvinar ante.
+            <div id="slider">
+              <div id="pics-container">
+                <div className="img-container">
+                  <img
+                    className="img"
+                    src={this.state.pics[this.state.pics.length - 1]}
+                    alt="ça marche ap"
+                  ></img>
+                </div>
+                <div className="img-container">
+                  <img
+                    className={anim}
+                    src={this.state.pics[0]}
+                    alt="ça marche ap"
+                  ></img>
+                </div>
+                <div className="img-container">
+                  <div id="img3">
+                    <img
+                      className="img"
+                      src={this.state.pics[1]}
+                      alt="ça marche ap"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-Integer sit amet arcu et sapien sollicitudin lobortis. Morbi a maximus lacus, posuere mollis neque. Nunc sagittis, ante porta molestie congue, nisi massa laoreet nibh, ut dignissim ipsum dolor non mauris. Nam ipsum massa, feugiat vel mi in, porta malesuada lorem. Praesent vel vestibulum dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam dictum erat at ex pretium viverra. Nam nec ipsum ut tortor interdum rhoncus sed suscipit felis. Sed aliquet ex ac risus tincidunt blandit. Curabitur varius ultricies lectus cursus convallis. Nulla cursus mattis ultrices. Nunc nec tellus id est eleifend accumsan tempus ut risus.
-
-Praesent rhoncus velit erat. Nam erat nisl, fermentum nec maximus eleifend, maximus eget odio. Curabitur varius tristique congue. Sed ullamcorper egestas congue. Morbi arcu sem, mollis id leo a, dictum pellentesque quam. Vestibulum sed egestas ex, vel pulvinar velit. Aenean finibus consectetur porttitor. Cras volutpat id felis feugiat dignissim. Nam facilisis ipsum at ante sagittis, in tincidunt nunc maximus. Phasellus non lorem et eros porta cursus. Pellentesque at massa dictum, suscipit lorem in, placerat lacus. In suscipit id orci a tempor. Cras malesuada dignissim nibh, non lacinia sem bibendum in. In dignissim orci id enim viverra pulvinar. Nullam convallis fermentum egestas. Donec ornare fringilla tellus et hendrerit.
-
-Nunc mauris lacus, volutpat id mauris sed, sodales cursus lacus. Integer eu consequat elit, vel viverra enim. Aliquam placerat ex sit amet enim varius tincidunt. Donec ut sodales ipsum. Mauris dictum ultrices velit, in rutrum dui vestibulum ac. Duis suscipit pretium elit sed placerat. In congue et ligula ut auctor. Curabitur vestibulum porttitor mi vitae placerat. Morbi quis mi eget enim finibus feugiat. Aenean vehicula odio ac nunc maximus vestibulum. Cras placerat posuere cursus. Aliquam erat volutpat. Quisque sodales varius ante, fringilla finibus purus rhoncus sit amet. Nunc fringilla sapien fringilla tortor gravida, ac commodo nibh sagittis. Donec et dui id sapien auctor aliquet.
-
-Morbi quis diam vel arcu varius laoreet. Maecenas a vestibulum mauris. Sed nec gravida massa. Vestibulum ultricies sem quis est pharetra, ac hendrerit risus gravida. Morbi tincidunt sodales fringilla. Mauris non bibendum purus. Vivamus tempus faucibus massa, eget scelerisque ante consequat ut. Nunc maximus tristique erat sit amet interdum. Fusce luctus diam at semper rhoncus.
-
-Phasellus faucibus laoreet orci, sed consectetur mi molestie suscipit. Quisque id lacus euismod, auctor tortor in, placerat magna. Fusce quis congue justo. Mauris hendrerit dapibus velit, nec placerat lorem venenatis et. Nulla facilisi. Pellentesque nec quam ac eros finibus accumsan in eu dui. Sed sit amet augue quis nibh lobortis maximus in nec magna. Vestibulum et blandit turpis. Nullam at dolor in magna lobortis pellentesque. In ante est, semper at leo eget, convallis rutrum nibh. Aenean dictum condimentum suscipit. Sed at lectus finibus, consequat metus et, blandit purus. Suspendisse potenti.
-
-In condimentum nisl ac eros interdum convallis. Donec ac risus ex. Vestibulum eu mi ac dui egestas aliquet at nec dui. Cras nec porta nisi. Mauris est odio, ultricies sed mollis sed, rutrum non nibh. Integer euismod pellentesque nibh. Nunc maximus, urna a tempus commodo, ante elit ultricies lacus, fermentum malesuada mi est at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi dui tellus, iaculis in nisl ac, pharetra mollis elit. Phasellus at augue eget mi aliquam malesuada.
-
-In pellentesque sapien mi, quis sollicitudin nisi condimentum at. Cras sagittis vulputate rhoncus. Duis aliquet elementum nisi in lacinia. Aenean varius tristique diam, vel efficitur odio pellentesque a. Phasellus lacinia quam ipsum, vel gravida orci suscipit non. Donec eu faucibus sapien. Integer a odio et ligula tempor tincidunt. Aliquam vel ligula non dui efficitur vulputate id id eros. Curabitur malesuada augue ut tellus cursus, at ultrices augue placerat. Suspendisse iaculis nec purus in viverra. Etiam interdum maximus tempus. In non libero ullamcorper, mollis ante a, vulputate massa. Maecenas a urna vitae arcu commodo malesuada at at turpis. Cras porta, mi non vestibulum commodo, nisi urna consequat turpis, eget cursus leo enim ac risus.
-
-Mauris quis tellus lobortis, sodales nisi vel, laoreet lorem. Nulla facilisi. Phasellus bibendum metus odio, nec cursus lacus maximus eu. Fusce imperdiet pulvinar massa, vitae rhoncus quam mollis at. Curabitur ultrices euismod gravida. Nunc et est ultricies, consequat sapien a, lacinia nunc. Donec elit nunc, tempus nec arcu nec, tempor ornare ante. In nibh orci, efficitur eget molestie condimentum, faucibus vel elit. Donec sit amet tristique lorem. Vivamus rutrum, neque at interdum pulvinar, dui risus laoreet sapien, a elementum augue augue nec enim. Cras non dictum enim, eu consequat tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-In hac habitasse platea dictumst. Donec consequat quis tortor quis feugiat. Suspendisse ac purus sit amet metus pharetra rutrum. Donec a quam sit amet neque sollicitudin consequat. Pellentesque bibendum enim quis nulla bibendum, quis feugiat metus aliquet. Vivamus cursus efficitur tortor, quis varius ex imperdiet nec. Donec quis posuere risus. Donec in justo in est faucibus varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas elementum ullamcorper nisl, id vulputate risus pretium eget. Phasellus volutpat sed ex ut congue. Phasellus vel commodo nisi. Nulla id vulputate nisi.
-
-Curabitur at arcu vitae libero faucibus fringilla eget nec velit. Praesent elit nulla, mattis ut lacus a, posuere bibendum quam. Donec blandit arcu libero, sit amet blandit eros condimentum id. Praesent ut tincidunt urna. Sed sed risus sed orci pretium rhoncus. Proin condimentum vehicula mauris. Nunc eget nunc et leo facilisis varius laoreet vel arcu. Sed mattis, neque a facilisis tempus, sem dui congue massa, a ultricies enim est sed purus. Cras tristique ullamcorper felis, sed tincidunt arcu. Sed orci turpis, facilisis non eros eget, scelerisque finibus urna. Sed dictum erat nulla, eget pellentesque ligula facilisis id. Nunc consequat, sapien ut sollicitudin bibendum, arcu ex tincidunt nisl, eget scelerisque tellus mi ac ex. Pellentesque eu leo dignissim, malesuada neque ac, elementum sapien. Mauris a porta metus, sit amet laoreet lacus.
-
-Curabitur a facilisis mi. Phasellus commodo, ex ac egestas congue, orci nisl rutrum ex, quis mollis justo enim nec tortor. Aenean pharetra nisi id volutpat imperdiet. Maecenas tristique, est sed pulvinar mollis, felis elit mattis magna, ac rutrum dui orci quis nibh. Proin placerat arcu quis nulla convallis commodo. Proin vel erat egestas, aliquam ante id, dictum quam. Phasellus vitae condimentum nulla, sit amet volutpat massa. Curabitur hendrerit ipsum sit amet risus vulputate, a facilisis diam sollicitudin. Maecenas eget sem semper, tempor arcu ac, aliquet dolor. Vestibulum est ipsum, vestibulum in placerat et, iaculis a nibh. Mauris tincidunt tellus felis, quis convallis nisi luctus sed. Nulla facilisi. Sed et leo at quam rutrum tincidunt a non lorem.
-
-Etiam aliquam leo eget ipsum tempor tempus. Sed suscipit lectus lacus, ut venenatis est dignissim vitae. Duis volutpat sem at nibh tempor, et mollis ipsum dignissim. Curabitur venenatis tempor tortor nec imperdiet. Integer non molestie neque, eget consequat arcu. Donec tincidunt elit ligula, non venenatis ex lobortis vel. Vivamus sed libero in ligula mollis facilisis vel sit amet neque. Pellentesque consectetur, leo posuere accumsan pretium, arcu lectus rutrum lorem, sed consectetur orci mi sit amet justo.
-
-Fusce ex sem, volutpat feugiat consectetur non, congue non sapien. Sed sed lacinia augue. Donec suscipit ipsum non nunc iaculis, nec varius elit tincidunt. Mauris venenatis dui non dolor luctus dictum. Integer sollicitudin ex ipsum, a commodo purus egestas quis. Cras auctor ut lacus id condimentum. Morbi malesuada risus id sapien vulputate, ac blandit nulla semper. Phasellus nunc velit, placerat quis finibus at, tempor in tellus. In eget cursus purus, non fermentum arcu. Nulla facilisi. Nunc auctor facilisis dolor et fringilla.
-
-Maecenas ac augue mi. Ut feugiat mauris diam, ac commodo enim euismod vel. Pellentesque egestas fringilla tristique. Aliquam vel varius nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ut dictum nunc. Suspendisse tincidunt maximus accumsan. Sed pharetra lorem nec eros feugiat, vestibulum faucibus mi elementum. Praesent ultrices neque vitae orci rutrum, id maximus nibh accumsan. Donec fermentum, ante et elementum dictum, magna metus gravida ante, ac aliquet quam massa eget urna.
-
-Donec ultrices lacinia commodo. Aliquam erat volutpat. Sed interdum odio nibh, vel efficitur sem condimentum eu. Suspendisse iaculis rhoncus egestas. Etiam et vulputate libero. Duis arcu nunc, vestibulum quis egestas eget, consequat et purus. Etiam justo ex, pharetra eu tincidunt sit amet, pulvinar id nunc. Vestibulum eget nisi sit amet ante commodo porta et at purus. Etiam elementum commodo erat ut pulvinar. Maecenas maximus, dui eget porttitor vestibulum, felis erat egestas sapien, id iaculis ex turpis non arcu. Etiam imperdiet quam in pulvinar efficitur.
-
-Praesent sapien eros, finibus a tincidunt ac, imperdiet facilisis ex. Maecenas ut nunc et odio pulvinar interdum. Sed fermentum lorem pretium, tempus felis ac, consequat nulla. Vivamus scelerisque feugiat nulla eu congue. Suspendisse sed fermentum augue, sed blandit eros. Integer convallis volutpat nibh, auctor pretium turpis convallis vel. Donec in augue id est elementum aliquet eu vitae lacus. Sed accumsan justo sit amet leo posuere, non tincidunt neque ullamcorper. Quisque sed eros quis nunc imperdiet feugiat id nec magna. Proin sagittis nibh eu placerat facilisis. Vivamus ac suscipit velit. 
+            <img
+              className="arrow"
+              src={rightArrow}
+              alt="ça marche ap"
+              onClick={this.handleRightSlide}
+            ></img>
           </div>
         </div>
       </div>
