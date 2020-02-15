@@ -1,0 +1,26 @@
+#contact {
+  height: auto;
+  min-height: 100vh;
+  position: relative
+}
+
+#contact-wrapper {
+  height: auto;
+  min-height: 100vh; 
+  position: relative;
+  z-index: 1;
+}
+
+#contact-bg-img {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 30%;
+  bottom:0;
+  right:0
+}
+
+#contact-content {
+  color: white
+}
+
