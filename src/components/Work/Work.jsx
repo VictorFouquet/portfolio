@@ -41,7 +41,8 @@ class Work extends React.Component {
                             href="https://www.linkedin.com/in/joshuan-spada-9b5559a2/"
                             target="_blank"
                           >
-                            {" "}Joshuan Spada
+                            {" "}
+                            Joshuan Spada
                           </a>{" "}
                           and{" "}
                           <a
@@ -79,7 +80,8 @@ class Work extends React.Component {
                             href="https://www.linkedin.com/in/joshuan-spada-9b5559a2/"
                             target="_blank"
                           >
-                            {" "}Joshuan Spada
+                            {" "}
+                            Joshuan Spada
                           </a>{" "}
                           and{" "}
                           <a
@@ -137,6 +139,8 @@ class Work extends React.Component {
                       </div>
                     </a>
                   </div>
+                </div>
+                <div className="app-project-row">
                   <div className=" overlay-image _bp third">
                     <a href="https://my-drumkit.netlify.com/" target="_blank">
                       <img
@@ -160,8 +164,6 @@ class Work extends React.Component {
                       </div>
                     </a>
                   </div>
-                </div>
-                <div className="app-project-row">
                   <div className=" overlay-image _bp third">
                     <a
                       href="https://codepen.io/victorfouquet/full/PowrEwX"
@@ -186,6 +188,8 @@ class Work extends React.Component {
                       </div>
                     </a>
                   </div>
+                </div>
+                <div className="app-project-row">
                   <div className=" overlay-image _bp third">
                     <a
                       href="https://my-random-quote-generator.netlify.com/"

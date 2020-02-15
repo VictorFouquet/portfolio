@@ -63,7 +63,7 @@
 #website-projects {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #app-projects {
@@ -102,11 +102,12 @@
 }
 
 .wide {
-  max-width: 50%;
+  width:100%;
+  max-width: 100%;
 }
 
 .third {
-  max-width: 33.33%;
+  max-width: 50%;
 }
 
 /* Image originale */

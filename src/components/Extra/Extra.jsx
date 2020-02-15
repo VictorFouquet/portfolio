@@ -23,7 +23,7 @@ class Extra extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      animating: false,
+      clName: "img",
       pics: [
         img1,
         img2,
@@ -47,75 +47,65 @@ class Extra extends React.Component {
   }
 
   handleLeftSlide = () => {
-    this.setState({animating: false})
+    this.setState({ clName: "left-out" });
     let provPics = [...this.state.pics];
     provPics.unshift(provPics.pop());
-    this.setState({
-      animating: true,
-    });
-    setTimeout(()=>{this.setState({pics: [...provPics], animating: false})}, 1100)
+
+    setTimeout(() => {
+      this.setState({ pics: [...provPics], clName: "left-in" });
+    }, 500);
   };
 
   handleRightSlide = () => {
-    this.setState({animating: false})
+    this.setState({ clName: "right-out" });
     let provPics = [...this.state.pics];
     provPics.push(provPics.shift());
-    this.setState({
-      animating: true,
-    });
-    setTimeout(()=>{this.setState({pics: [...provPics], animating: false})}, 1100)
+    setTimeout(() => {
+      this.setState({ pics: [...provPics], clName: "right-in" });
+    }, 500);
   };
 
   render() {
-    var anim = this.state.animating ? "img-animating" : "img"
+    var anim = this.state.animating ? "img-animating" : "img";
     return (
       <div id="extra">
         <div id="extra-wrapper">
           <div id="extra-bg-img">
-          <img id="extra-illu-btm" src={bgIllu} alt="ça marche ap"></img>
+            <img id="extra-illu-btm" src={bgIllu} alt="ça marche ap"></img>
           </div>
+          
           <div id="extra-content">
-            <img
-              className="arrow"
-              src={leftArrow}
-              alt="ça marche ap"
-              onClick={this.handleLeftSlide}
-            ></img>
-
-            <div id="slider">
-              <div id="pics-container">
-                <div className="img-container">
-                  <img
-                    className="img"
-                    src={this.state.pics[this.state.pics.length - 1]}
-                    alt="ça marche ap"
-                  ></img>
-                </div>
-                <div className="img-container">
-                  <img
-                    className={anim}
-                    src={this.state.pics[0]}
-                    alt="ça marche ap"
-                  ></img>
-                </div>
-                <div className="img-container">
-                  <div id="img3">
+          <h1 id="artworks-title">Artworks</h1>
+            <div id="slider-btn-ctn">
+              <div id="slider">
+                <div id="pics-container">
+                  <div className="img-container">
                     <img
-                      className="img"
-                      src={this.state.pics[1]}
+                      className={this.state.clName}
+                      src={this.state.pics[0]}
                       alt="ça marche ap"
                     ></img>
                   </div>
                 </div>
               </div>
-            </div>
+              <div id="arrows-container">
+                <div id="left-arr-ctn" onClick={this.handleLeftSlide}>
+                  <img
+                    className="arrow"
+                    src={leftArrow}
+                    alt="ça marche ap"
+                  ></img>
+                </div>
 
-            <img
-              className="arrow"
-              src={rightArrow}
-              alt="ça marche ap"
-              onClick={this.handleRightSlide}
-            ></img>
+                <div id="right-arr-ctn" onClick={this.handleRightSlide}>
+                  <img
+                    className="arrow"
+                    src={rightArrow}
+                    alt="ça marche ap"
+                  ></img>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
