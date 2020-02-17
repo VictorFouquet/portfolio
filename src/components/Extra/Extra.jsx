@@ -15,8 +15,8 @@ import img12 from "../../assets/art/12.png";
 import img13 from "../../assets/art/13.png";
 import img14 from "../../assets/art/14.png";
 import img15 from "../../assets/art/15.png";
-import leftArrow from "../../assets/left-arrow.png";
-import rightArrow from "../../assets/right-arrow.png";
+import LeftArrowIcon from "../../svgIcons/LeftArrowIcon";
+import RightArrowIcon from "../../svgIcons/RightArrowIcon";
 import bgIllu from "../../assets/bgIllu.png";
 
 class Extra extends React.Component {
@@ -90,19 +90,11 @@ class Extra extends React.Component {
               </div>
               <div id="arrows-container">
                 <div id="left-arr-ctn" onClick={this.handleLeftSlide}>
-                  <img
-                    className="arrow"
-                    src={leftArrow}
-                    alt="ça marche ap"
-                  ></img>
+                  <LeftArrowIcon />
                 </div>
 
                 <div id="right-arr-ctn" onClick={this.handleRightSlide}>
-                  <img
-                    className="arrow"
-                    src={rightArrow}
-                    alt="ça marche ap"
-                  ></img>
+                  <RightArrowIcon />
                 </div>
               </div>
             </div>

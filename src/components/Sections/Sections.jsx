@@ -9,8 +9,11 @@ import Skills from '../Skills/Skills';
 import Work from '../Work/Work';
 
 class Sections extends React.Component {
+  constructor(props){
+    super(props)
+  }
   render() {
-    return <div id="sections">
+    return <div id={"sections-" + this.props.theme}>
       <Jumbotron />
       <About />
       <Skills />

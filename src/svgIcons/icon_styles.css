@@ -1,0 +1,80 @@
+.nav-bar-icon {
+  max-width: 100%;
+  fill: #5ce8ff;
+  stroke-width: 0.033446;
+}
+
+.nav-bar-icon:hover {
+  fill: #82eeff;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+}
+
+.nav-bar-icon:active {
+  fill: #c2f4fc;
+}
+
+.nav-bar-logo {
+  max-width: 70%;
+  fill: #5ce8ff;
+  stroke-width: 0.033446;
+}
+
+.nav-bar-logo:hover {
+  fill: #82eeff;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+}
+
+.nav-bar-logo:active {
+  fill: #c2f4fc;
+}
+
+.nav-bar-link {
+  max-width: 70%;
+  fill: #5ce8ff;
+  stroke-width: 0.033446;
+}
+
+.nav-bar-link:hover {
+  fill: #82eeff;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+}
+
+.nav-bar-link:active {
+  fill: #c2f4fc;
+}
+
+.arrow{
+  max-width: 60%;
+  fill: #5ce8ff;
+  stroke-width: 0.033446;
+}
+
+.arrow:hover{
+  cursor: pointer;
+  fill: #82eeff;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+}
+
+.arrow:active{
+  fill: #c2f4fc;
+}
+
+.theme-icon{
+  width: 50%;
+  fill: #5ce8ff
+}
+
+.theme-icon:hover{
+  cursor: pointer;
+  fill: #82eeff;
+  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.61)) blur(0.1px);
+}
+
+.theme-icon:active{
+  fill: #c2f4fc;
+}

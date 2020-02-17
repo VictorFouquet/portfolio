@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Sections from './components/Sections/Sections';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Sections />
+      <Portfolio />
     </div>
   );
 }

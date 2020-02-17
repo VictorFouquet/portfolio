@@ -1,4 +1,9 @@
-#sections {
+#sections-dark {
     margin-left: 70px;
     background: rgb(27, 27, 27);
+}
+
+#sections-light {
+    margin-left: 70px;
+    background: #98dce7;
 }
