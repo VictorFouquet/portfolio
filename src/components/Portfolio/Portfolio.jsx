@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from '../NavBar/NavBar';
+import SideBar from '../SideBar/SideBar';
 import Sections from '../Sections/Sections';
-
+import NavBar from '../NavBar/NavBar'
 class Portfolio extends React.Component {
   constructor(props){
     super(props)
@@ -17,8 +17,14 @@ class Portfolio extends React.Component {
   }
 
   render() {
+    var nav;
+    if (window.innerWidth < 500) {
+      nav = <NavBar />
+    } else {
+      nav = <SideBar />
+    }
     return <div id="portfolio">
-      <NavBar theme={this.state.theme} handleTheme={this.changeTheme}/>
+      {nav}
       <Sections theme={this.state.theme} />
     </div>;
   }

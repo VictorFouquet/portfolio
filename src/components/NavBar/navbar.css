@@ -1,48 +1,75 @@
 #navbar {
-  width: 70px;
-  height: 100vh;
-  background: #111;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+    height: 70px;
+    width: 100vw;
+    background: #111;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .nav-bar-dropdown-icon {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 40%;
+  }
+  
+  #logo-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 70px;
+    height: 70px;
+    
+  }
 
-.nav-icon {
-  margin: 5px 0px;
-  width: 30px;
-  padding:10px;
-}
+  #nav-menu-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 70px;
+    height: 70px;
+    
+  }
+ 
+  .logo-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#logo-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  background: #000;
-  width: 70px;
-  height: 70px;
-}
+  #menu {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120%;
+    color: #d9e1d3;
+    top: 70px;
+    right: 0;
+    position: fixed; 
+    z-index: 1000;
+  }
 
-#ext-website-icon-nav-bar{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  background: #000;
-  width: 70px;
-  height: 140px;
-}
+  .drop-down-item {
+      border: black 1px solid;
+      height: 50px;
+      width: 80vw;
+      background: rgb(10, 10, 10);
+      border-radius: 3vh 0 0 3vh;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5vw;
+      align-items: center;
+  }
 
-.logo-icon {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  #home-icon-nav-bar {
+      height: 80%;
+      width: auto;
+  }
