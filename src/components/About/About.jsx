@@ -19,13 +19,13 @@ class About extends React.Component {
 
               <h3>Attitude</h3>
 
-              <p>
+              <p className="about-paragraph">
                 Were I asked about my main philosophy, I would suggest that we,
                 as human beings, should be compared to tree diagrams more than
                 to piles. Regarded as an intricate network of knowledges, tastes
                 and abilities, richer than a mere addition of traits.
               </p>
-              <p>
+              <p className="about-paragraph">
                 As well as visual harmony in creation always draws in the exact
                 same roots, either it gets pursued in a fine craft workshop or
                 in front of a keyboad, a bold and sharp state of mind will
@@ -35,13 +35,13 @@ class About extends React.Component {
 
               <h3>Background</h3>
 
-              <p>
+              <p className="about-paragraph">
                 Continuously engaged into an esthetic research built on
                 practical experimentation, I've committed myself to deploy new
                 branches in as many fields of creation as I've been given the
                 opportunity to explore.
               </p>
-              <p>
+              <p className="about-paragraph">
                 From art studies to a gilding and mural design first part of
                 career, with frequent moves to both 2d and 3d digital graphics,
                 my path has been aimed at linking my techniques to express the
@@ -52,7 +52,7 @@ class About extends React.Component {
 
               <h3>Current considerations</h3>
 
-              <p>
+              <p className="about-paragraph">
                 Initiated to computer science and web design in 2019 through The
                 Hacking Project peer-learning bootcamp, I've discovered what is,
                 so far to me, the most complete tool for creative expression and
@@ -63,15 +63,15 @@ class About extends React.Component {
                 <p>Why ?</p>
               </b>
 
-              <p>
+              <p className="about-paragraph">
                 Because informatics are limitless in their fields of
                 application.
               </p>
-              <p>
+              <p className="about-paragraph">
                 Because of the invaluable interactive potential these
                 technologies offer due their widespread use.
               </p>
-              <p>
+              <p className="about-paragraph">
                 Because with some well-shaped lines of code, a whole universe
                 can be created from scratch, from its mecanics to its
                 flourishes.

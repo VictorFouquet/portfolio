@@ -4,21 +4,21 @@ import "./skills.css";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected"; 
+import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
 
 import bgIllu from "../../assets/bgIllu.png";
-import CloseIcon from '../../svgIcons/CloseIcon';
+import CloseIcon from "../../svgIcons/CloseIcon";
 
-import graphData from './data/graphData';
-import programmationData from './data/programmationData';
-import algorithmsData from './data/algorithmsData';
-import dataStructuresData from './data/dataStructuresData';
-import workflowData from './data/workflowData';
-import designData from './data/designData';
-import digitalData from './data/digitalData';
-import traditionnalData from './data/traditionnalData';
-import fineCraftData from './data/fineCraftData';
-import languagesData from './data/languagesData';
+import graphData from "./data/graphData";
+import programmationData from "./data/programmationData";
+import algorithmsData from "./data/algorithmsData";
+import dataStructuresData from "./data/dataStructuresData";
+import workflowData from "./data/workflowData";
+import designData from "./data/designData";
+import digitalData from "./data/digitalData";
+import traditionnalData from "./data/traditionnalData";
+import fineCraftData from "./data/fineCraftData";
+import languagesData from "./data/languagesData";
 
 function am4themes_myTheme(target) {
   if (target instanceof am4core.ColorSet) {
@@ -37,7 +37,7 @@ class Skills extends React.Component {
       text: "I'm the one in head",
       chartToDisplay: "chartdiv",
       arbo: [],
-      graphToggled: false,
+      graphToggled: false
     };
 
     this.skillChart = this.skillChart.bind(this);
@@ -52,7 +52,6 @@ class Skills extends React.Component {
     this.workflowChart = this.workflowChart.bind(this);
     this.overallGraph = this.overallGraph.bind(this);
     this.toggleGraph = this.toggleGraph.bind(this);
-
   }
 
   componentDidMount() {
@@ -68,10 +67,10 @@ class Skills extends React.Component {
     }
   }
 
-  toggleGraph(){
+  toggleGraph() {
     this.setState({
       graphToggled: !this.state.graphToggled
-    })
+    });
   }
 
   overallGraph() {
@@ -401,13 +400,25 @@ class Skills extends React.Component {
         );
       }
     }, this);
-    arboDiv.unshift(<div className="arbo-item-overall" onClick={this.toggleGraph}>Overall View<div className="circle" /></div>)
-    var graphClName = this.state.graphToggled ? "graph-ctn" : "graph-ctn-hidden"
+    arboDiv.unshift(
+      <div className="arbo-item-overall" onClick={this.toggleGraph}>
+        Overall View
+        <div className="circle" />
+      </div>
+    );
+    var graphClName = this.state.graphToggled
+      ? "graph-ctn"
+      : "graph-ctn-hidden";
     return (
       <div id="skills">
         <div id={graphClName}>
-          <div id="close" onClick={this.toggleGraph}><CloseIcon /></div>
-          <div id="chartdivgraph" style={{ width: "100%", height: "100%" }}></div>
+          <div id="close" onClick={this.toggleGraph}>
+            <CloseIcon />
+          </div>
+          <div
+            id="chartdivgraph"
+            style={{ width: "100%", height: "100%" }}
+          ></div>
         </div>
         <div id="skills-wrapper">
           <div id="skills-bg-img-top">
