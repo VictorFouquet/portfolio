@@ -4,6 +4,7 @@
 }
 
 .App{
+  overflow-x: hidden;
   display:flex;
   flex-direction:row;
 }

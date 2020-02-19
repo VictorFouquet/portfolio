@@ -4,7 +4,7 @@ class MyLogo extends React.Component {
   render() {
     return (
       <svg
-        className="nav-bar-logo"
+        className="nav-bar-icon"
         version="1.1"
         viewBox="0 0 22.681 22.601"
         xmlns="http://www.w3.org/2000/svg"

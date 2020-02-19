@@ -478,7 +478,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
     animation: appear 1s ease-in-out forwards 6.4s;
+  }
+
+  .subtitle{
+    margin: 0 2vw;
   }
 }

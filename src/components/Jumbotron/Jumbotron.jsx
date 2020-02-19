@@ -4,6 +4,16 @@ import bgIllu from "../../assets/bgIllu.png";
 
 class Jumbotron extends React.Component {
   render() {
+    var text;
+    if(window.innerWidth > 500){
+      text = <div className="subtitle">Fullstack Developer // Web Designer // Artist</div>
+    } else {
+      text = [
+        <div className="subtitle">Fullstack Developer</div>,
+        <div className="subtitle">Web Designer</div>,
+        <div className="subtitle">Artist</div>
+      ]
+    }
     return (
       <div id="jumbotron">
         <div id="jumbotron-wrapper">
@@ -148,9 +158,7 @@ class Jumbotron extends React.Component {
               </svg>
             </div>
             <div id="text">
-              <div className="subtitle">
-                Fullstack Developer // Web Designer // Artist
-              </div>
+              {text}
               <div className="subtitle">Based in Marseille </div>
             </div>
           </div>

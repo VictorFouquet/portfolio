@@ -81,8 +81,9 @@
 }
 
 #skills-title {
-  margin: 0px auto 80px 20%;
+  margin: 0px auto 3% 20%;
 }
+
 tspan {
   fill: #d4e1d5;
   font-family: "Source Sans Pro", sans-serif;
@@ -109,7 +110,7 @@ polyline {
   display: flex;
   height: 4vh;
   border: solid 1px white;
-  width: 41.1vw;
+  width: 60vw;
   border-radius: 2vh;
   background: black;
 }
@@ -119,7 +120,7 @@ polyline {
   position: absolute;
   z-index: 110;
   height: 100%;
-  width: 11vw;
+  width: 16vw;
   min-width: 150px;
   display: flex;
   align-items: center;
@@ -136,13 +137,13 @@ polyline {
   position: absolute;
   z-index: 100;
   height: 100%;
-  width: 11vw;
+  width: 16vw;
   display: flex;
   align-items: center;
   justify-content: end;
   min-width: 5vw;
   background: #272727;
-  transform: translateX(10vw);
+  transform: translateX(15vw);
 }
 
 .arbo-item-middle-level {
@@ -150,14 +151,14 @@ polyline {
   position: absolute;
   z-index: 10;
   height: 100%;
-  width: 11vw;
+  width: 16vw;
   min-width: 5vw;
   display: flex;
   align-items: center;
   justify-content: end;
   background: #303030;
-  transform: translateX(1vw);
-  animation: slidein 0.5s ease-in-out forwards;
+  transform: translateX(30vw);
+  animation: slidein-middle 0.5s ease-in-out forwards;
 }
 
 @keyframes slidein {
@@ -165,7 +166,16 @@ polyline {
     transform: translateX(0);
   }
   to {
-    transform: translateX(20vw);
+    transform: translateX(15vw);
+  }
+}
+
+@keyframes slidein-middle {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30vw);
   }
 }
 
@@ -182,7 +192,7 @@ polyline {
   position: absolute;
   z-index: 1;
   height: 100%;
-  width: 11vw;
+  width: 14.9vw;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -197,7 +207,7 @@ polyline {
     transform: translateX(10);
   }
   to {
-    transform: translateX(30vw);
+    transform: translateX(45vw);
   }
 }
 

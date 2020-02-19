@@ -60,7 +60,7 @@ class About extends React.Component {
               </p>
 
               <b>
-                <p>Why ?</p>
+                <p className="about-paragraph">Why ?</p>
               </b>
 
               <p className="about-paragraph">
@@ -79,9 +79,9 @@ class About extends React.Component {
 
               <h3>What I can do for you </h3>
 
-              <p>Sober and elegant designs</p>
-              <p>Efficient and simple solutions to complex problems</p>
-              <p>Innotive ideas and smart propositions</p>
+              <p className="about-paragraph">Sober and elegant designs</p>
+              <p className="about-paragraph">Efficient and simple solutions to complex problems</p>
+              <p className="about-paragraph">Innotive ideas and smart propositions</p>
             </div>
           </div>
         </div>

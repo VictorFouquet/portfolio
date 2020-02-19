@@ -545,53 +545,10 @@ class SkillsMobile extends React.Component {
   }
 
   render() {
-    let arboDiv = this.state.arbo.map(function(e) {
-      console.log(e);
-      if (e === "Skills") {
-        return (
-          <div className="arbo-item-top-level" onClick={this.skillChart}>
-            {e}
-            <div className="circle" />
-          </div>
-        );
-      } else if (e === "Design") {
-        return (
-          <div className="arbo-item-middle-level" onClick={this.designChart}>
-            {e}
-            <div className="circle" />
-          </div>
-        );
-      } else if (e === "Programmation") {
-        return (
-          <div
-            className="arbo-item-middle-level"
-            onClick={this.programmationChart}
-          >
-            {e}
-            <div className="circle" />
-          </div>
-        );
-      } else {
-        return (
-          <div className="arbo-item-bottom-level">
-            {e}
-            <div className="circle" />
-          </div>
-        );
-      }
-    }, this);
-    arboDiv.unshift(
-      <div className="arbo-item-overall" onClick={this.toggleGraph}>
-        Overall View
-        <div className="circle" />
-      </div>
-    );
-    var graphClName = this.state.graphToggled
-      ? "graph-ctn"
-      : "graph-ctn-hidden";
+
     return (
       <div id="skills">
-        <div id={graphClName}>
+        <div >
           <div id="close" onClick={this.toggleGraph}>
             <CloseIcon />
           </div>
@@ -599,7 +556,7 @@ class SkillsMobile extends React.Component {
         <div id="skills-wrapper">
 
           <div id="skills-content">
-            <h1 id="skills-title">Skills :</h1>
+            <h1 id="skills-mobile-title">Skills :</h1>
 
             <div
               id="chartdivgraph"

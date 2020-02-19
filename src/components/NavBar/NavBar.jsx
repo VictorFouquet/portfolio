@@ -30,37 +30,37 @@ class NavBar extends React.Component {
       menu = (
         <div id="menu" className="dropdown-ctn">
           <div className="drop-down-item">
-            <a className="nav-bar-dropdown-icon" href="#jumbotron" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#jumbotron" onClick={this.toggleMenu}>
               <HomeIcon />
             </a>
             Home
           </div>
           <div className="drop-down-item" >
-            <a className="nav-bar-dropdown-icon" href="#about" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#about" onClick={this.toggleMenu}>
               <ProfileIcon  />
             </a>
             About
           </div>
           <div className="drop-down-item">
-            <a className="nav-bar-dropdown-icon" href="#skills" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#skills" onClick={this.toggleMenu}>
               <SkillsIcon />
             </a>
             Skills
           </div>
           <div className="drop-down-item">
-            <a className="nav-bar-dropdown-icon" href="#work" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#work" onClick={this.toggleMenu}>
               <WorkIcon />
             </a>
             Work
           </div>
           <div className="drop-down-item">
-            <a className="nav-bar-dropdown-icon" href="#extra" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#extra" onClick={this.toggleMenu}>
               <ArtIcon />
             </a>
             Artwork
           </div>
           <div className="drop-down-item">
-            <a className="nav-bar-dropdown-icon" href="#contact" onClick={this.toggleMenu}>
+            <a className="nav-icon" href="#contact" onClick={this.toggleMenu}>
               <ContactIcon />
             </a>
             Contact
@@ -72,7 +72,7 @@ class NavBar extends React.Component {
       <div>
         <div id="navbar">
           <div id="logo-icon-container">
-            <a className="logo-icon" href="#jumbotron">
+            <a className="nav-icon" href="#jumbotron">
               <MyLogo />
             </a>
           </div>

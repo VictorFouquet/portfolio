@@ -88,7 +88,7 @@ form {
 }
 
 .contact-title {
-  margin: 0 0 5vh 10vw;
+  margin:0 auto 10vh 20%;
 }
 
 @media screen and (max-width: 600px) {
@@ -98,5 +98,8 @@ form {
 
   form {
     width: 81vw;
+  }
+  .contact-title {
+    margin: 0 0 5vh 10vw;
   }
 }
