@@ -68,7 +68,7 @@ form {
   width: 5vw;
   padding: 1vh;
   margin: 1.5vh auto;
-  background: radial-gradient(black,#121212);
+  background: radial-gradient(black, #121212);
   box-shadow: 2px 0px 0px #111010, inset -1px 0px 2px black,
     inset 1px 0px 2px #1a1a1a, -2px 0px 2px #00ffff6e, 3px 0px 2px #00ffff6e;
 }
@@ -89,4 +89,14 @@ form {
 
 .contact-title {
   margin: 0 0 5vh 10vw;
+}
+
+@media screen and (max-width: 600px) {
+  .send-message-button {
+    width: 28vw;
+  }
+
+  form {
+    width: 81vw;
+  }
 }

@@ -1,12 +1,12 @@
 #jumbotron {
   height: auto;
   min-height: 100vh;
-  position: relative
+  position: relative;
 }
 
 #jumbotron-wrapper {
   height: auto;
-  min-height: 100vh; 
+  min-height: 100vh;
   position: relative;
   z-index: 1;
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 #main-title-ctn {
-  width:60vw
+  width: 60vw;
 }
 
 #jumbotron-bg-img {
@@ -25,29 +25,28 @@
   justify-content: end;
   z-index: -1;
   width: 100%;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
   animation: appear-img-1 1.5s ease-in-out forwards 6.9s;
 }
 
 #jumbotron-illu {
   width: 60vw;
   right: -5%;
-  opacity: .8
+  opacity: 0.8;
 }
 #jumbotron-content {
   color: blue;
-  margin-left: 10%
-  
+  margin-left: 10%;
 }
 
-#text{
+#text {
   opacity: 0;
   padding: 1vw;
   font-size: 130%;
   max-width: 30vw;
   background: #111;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   border: solid 1px #5ce8ff;
   border-radius: 3px;
   color: #d9e1d3;
@@ -58,20 +57,20 @@
   animation: appear 1s ease-in-out forwards 6.4s;
 }
 
-@keyframes appear{
+@keyframes appear {
   to {
     opacity: 1;
   }
 }
 
-@keyframes appear-img-1{
+@keyframes appear-img-1 {
   to {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
-@keyframes appear-img-2{
+@keyframes appear-img-2 {
   to {
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -333,7 +332,7 @@
 #logo path:nth-child(12):hover {
   fill: #5ce8ff;
   stroke: #5ce8ff;
-  transform: scale(.99) rotate(-4deg);
+  transform: scale(0.99) rotate(-4deg);
   transition: all 0.1s ease-in-out;
 }
 
@@ -440,5 +439,46 @@
 
   to {
     fill: #d9e1d3;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #jumbotron-bg-img {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    z-index: -1;
+    width: 100%;
+    bottom: 12%;
+    right: -6%;
+    animation: appear-img-1 1.5s ease-in-out forwards 6.9s;
+  }
+
+  #jumbotron-illu {
+    width: 136vw;
+    right: -13%;
+    opacity: 0.8;
+    transform: rotate(322deg);
+    /* bottom: 16%; */
+  }
+  #main-title-ctn {
+    width: 100vw;
+  }
+  #text {
+    opacity: 0;
+    padding: 1vw;
+    font-size: 130%;
+    max-width: 50vw;
+    background: #111;
+    font-family: "Source Sans Pro", sans-serif;
+    border: solid 1px #5ce8ff;
+    border-radius: 3px;
+    color: #d9e1d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: appear 1s ease-in-out forwards 6.4s;
   }
 }

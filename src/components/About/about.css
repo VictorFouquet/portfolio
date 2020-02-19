@@ -75,7 +75,7 @@ b {
 }
 
 @media screen and (max-width: 640px) {
-  #about-text-wrapper {    
+  #about-text-wrapper {
     width: 90%;
   }
   .about-paragraph {
@@ -96,6 +96,14 @@ b {
   #about-illu-top {
     opacity: 0.4;
     height: 100%;
-    max-width: 100%
+    max-width: 100%;
+  }
+  #about-bg-img-btm {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    width: 84%;
+    bottom: -15%;
+    right: 0;
   }
 }

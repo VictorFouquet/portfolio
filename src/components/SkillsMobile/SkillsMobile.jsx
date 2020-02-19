@@ -61,6 +61,9 @@ class SkillsMobile extends React.Component {
   }
 
   overallGraph() {
+    if (this.chart){
+      this.chart.dispose();
+    }
     
     let chart = am4core.create(
       "chartdivgraph",
@@ -88,6 +91,9 @@ class SkillsMobile extends React.Component {
       function(ev) {
         console.log(ev.target["_dataItem"]["_dataContext"].name);
         switch (ev.target["_dataItem"]["_dataContext"].name) {
+          case "Skills":
+            this.overallGraph();
+            break;
           case "Programming":
             console.log(graphData[0].children[1]);
             this.programmationGraph();
@@ -591,12 +597,7 @@ class SkillsMobile extends React.Component {
           </div>
         </div>
         <div id="skills-wrapper">
-          <div id="skills-bg-img-top">
-            <img id="skills-illu-top" src={bgIllu} alt="ça marche ap"></img>
-          </div>
-          <div id="skills-bg-img-btm">
-            <img id="skills-illu-btm" src={bgIllu} alt="ça marche ap"></img>
-          </div>
+
           <div id="skills-content">
             <h1 id="skills-title">Skills :</h1>
 
