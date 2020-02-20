@@ -29,42 +29,46 @@ class NavBar extends React.Component {
     if (this.state.menuToggled) {
       menu = (
         <div id="menu" className="dropdown-ctn">
-          <div className="drop-down-item">
-            <a className="nav-icon" href="#jumbotron" onClick={this.toggleMenu}>
+          <a
+            className="drop-down-item"
+            href="#jumbotron"
+            onClick={this.toggleMenu}
+          >
+            <div className="nav-icon">
               <HomeIcon />
-            </a>
+            </div>
             Home
-          </div>
-          <div className="drop-down-item" >
-            <a className="nav-icon" href="#about" onClick={this.toggleMenu}>
-              <ProfileIcon  />
-            </a>
+          </a>
+          <a className="drop-down-item" href="#about" onClick={this.toggleMenu}>
+            <div className="nav-icon">
+              <ProfileIcon />
+            </div>
             About
-          </div>
-          <div className="drop-down-item">
-            <a className="nav-icon" href="#skills" onClick={this.toggleMenu}>
+          </a>
+          <a className="drop-down-item" href="#skills" onClick={this.toggleMenu}>
+            <div className="nav-icon">
               <SkillsIcon />
-            </a>
+            </div>
             Skills
-          </div>
-          <div className="drop-down-item">
-            <a className="nav-icon" href="#work" onClick={this.toggleMenu}>
+          </a>
+          <a className="drop-down-item" href="#work" onClick={this.toggleMenu}>
+            <div className="nav-icon">
               <WorkIcon />
-            </a>
+            </div>
             Work
-          </div>
-          <div className="drop-down-item">
-            <a className="nav-icon" href="#extra" onClick={this.toggleMenu}>
+          </a>
+          <a className="drop-down-item" href="#extra" onClick={this.toggleMenu}>
+            <div className="nav-icon">
               <ArtIcon />
-            </a>
+            </div>
             Artwork
-          </div>
-          <div className="drop-down-item">
-            <a className="nav-icon" href="#contact" onClick={this.toggleMenu}>
+          </a>
+          <a className="drop-down-item" href="#contact" onClick={this.toggleMenu}>
+            <div className="nav-icon">
               <ContactIcon />
-            </a>
+            </div>
             Contact
-          </div>
+          </a>
         </div>
       );
     }

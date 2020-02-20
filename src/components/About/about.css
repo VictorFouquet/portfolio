@@ -2,6 +2,8 @@
   height: auto;
   min-height: 100vh;
   position: relative;
+  margin-left: 70px;
+  width: calc(100% - 70px);
 }
 
 #about-wrapper {
@@ -75,6 +77,10 @@ b {
 }
 
 @media screen and (max-width: 640px) {
+  #about {
+    margin-left: 0;
+    width: 100vw;
+  }
   #about-text-wrapper {
     width: 90%;
   }

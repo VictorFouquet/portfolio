@@ -2,6 +2,8 @@
   height: auto;
   min-height: 100vh;
   position: relative;
+  margin-left: 70px;
+  width: calc(100vw - 70px);
 }
 
 #extra-wrapper {
@@ -264,6 +266,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  #extra {
+    margin-left: 0;
+    width: 100vw;
+  }
+
   #extra-bg-img {
     display: inline-block;
     position: absolute;

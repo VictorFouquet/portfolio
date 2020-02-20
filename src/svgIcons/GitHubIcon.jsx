@@ -4,7 +4,7 @@ class GitHubIcon extends React.Component {
   render() {
     return (
       <svg
-        className="nav-bar-link"
+        className="nav-bar-icon"
         version="1.1"
         viewBox="0 0 14.161 13.796"
         xmlns="http://www.w3.org/2000/svg"

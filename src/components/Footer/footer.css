@@ -1,6 +1,8 @@
 #footer {
   height: auto;
-  position: relative
+  position: relative;
+  margin-left: 70px;
+  width: calc(100% - 70px)
 }
 
 #footer-wrapper {
@@ -20,20 +22,23 @@
 }
 
 #footer-content {
-  height:30vh;
+  height:auto;
+  min-height:30vh;
   bottom:0;
   background: #000;
   font-family: "Source Sans Pro", sans-serif;
   color: #5ce8ff;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6vh;
 }
 
 #icon-footer-container{
   margin-top: 6vh;
-  height: 3vh;
   display: flex;
+  justify-content: center;
   width: 40vh
 }
 
@@ -43,4 +48,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+    margin-left: 0;
+    width: 100vw;
+  }
+  #footer-content-wrapper {
+    width: auto;
+  }
 }

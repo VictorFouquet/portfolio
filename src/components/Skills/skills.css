@@ -2,7 +2,8 @@
   height: auto;
   min-height: 100vh;
   position: relative;
-  width: 100vw;
+  margin-left: 70px;
+  width: calc(100vw - 70px);
 }
 
 #graph-ctn {
@@ -124,7 +125,7 @@ polyline {
   min-width: 150px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background: #1b1b1b;
 }
 
@@ -140,7 +141,7 @@ polyline {
   width: 16vw;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   min-width: 5vw;
   background: #272727;
   transform: translateX(15vw);
@@ -155,7 +156,7 @@ polyline {
   min-width: 5vw;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background: #303030;
   transform: translateX(30vw);
   animation: slidein-middle 0.5s ease-in-out forwards;
@@ -195,7 +196,7 @@ polyline {
   width: 14.9vw;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   min-width: 5vw;
   background: #3c3c3c;
   transform: translateX(2vw);
@@ -229,4 +230,11 @@ polyline {
   width: 1.5vh;
   background: #4296a4;
   margin: auto 1.5vh;
+}
+
+@media screen and (max-width: 600px) {
+  #skills {
+    margin-left: 0;
+    width: 100vw;
+  }
 }

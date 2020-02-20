@@ -14,20 +14,29 @@ class Footer extends React.Component {
           <div id="footer-bg-img"></div>
           <div id="footer-content">
             <div id="footer-content-wrapper">
-              <div>Coded and Designed by Victor Fouquet - 2020</div>
-              <div>
+              <p>Code and Design by Victor Fouquet - 2020<br/>
                 All images and illustrations on this website are the copyrighted
                 property of their respective owners
-              </div>
-              <div>
                 and may not be used without express permission from the owner.
-              </div>
+              </p>
               <div id="icon-footer-container">
-                <LinkedInIcon />
-                <GitHubIcon />
-                <CodePenIcon />
-                <CodeWarsIcon />
-                <InstagramIcon />
+                <a className="nav-icon" href="https://www.linkedin.com/in/v-fouquet/" target="blank">
+                  <LinkedInIcon />
+                </a>
+                <a className="nav-icon" href="https://github.com/VictorFouquet" target="blank">
+                  <GitHubIcon />
+                </a>
+
+                <a className="nav-icon" href="https://codepen.io/victorfouquet" target="blank">
+                  <CodePenIcon />
+                </a>
+
+                <a className="nav-icon" href="https://www.codewars.com/users/VictorFouquet" target="blank">
+                  <CodeWarsIcon />
+                </a>
+                <a className="nav-icon" href="https://www.instagram.com/victor.fouquet.artist/" target="blank">
+                  <InstagramIcon />
+                </a>
               </div>
             </div>
           </div>

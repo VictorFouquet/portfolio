@@ -549,9 +549,6 @@ class SkillsMobile extends React.Component {
     return (
       <div id="skills">
         <div >
-          <div id="close" onClick={this.toggleGraph}>
-            <CloseIcon />
-          </div>
         </div>
         <div id="skills-wrapper">
 

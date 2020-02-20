@@ -4,7 +4,7 @@ class LinkedInIcon extends React.Component {
   render() {
     return (
       <svg
-        className="nav-bar-link"
+        className="nav-bar-icon"
         version="1.1"
         viewBox="0 0 13.736 13.981"
         xmlns="http://www.w3.org/2000/svg"
