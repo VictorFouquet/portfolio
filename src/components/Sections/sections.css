@@ -3,8 +3,7 @@
 }
 
 #sections-light {
-    margin-left: 70px;
-    background: #98dce7;
+    background: #f9f9f9;
 }
 
 @-moz-document url-prefix() {

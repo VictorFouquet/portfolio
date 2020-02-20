@@ -10,11 +10,11 @@ import bgIllu from "../../assets/bgIllu.png";
 import CloseIcon from "../../svgIcons/CloseIcon";
 
 import graphData from "./data/graphData";
-import programmationData from "./data/programmationData";
+import programmingData from "./data/programmingData";
 import algorithmsData from "./data/algorithmsData";
 import dataStructuresData from "./data/dataStructuresData";
 import workflowData from "./data/workflowData";
-import designData from "./data/designData";
+import artData from "./data/artData";
 import digitalData from "./data/digitalData";
 import traditionnalData from "./data/traditionnalData";
 import fineCraftData from "./data/fineCraftData";
@@ -41,9 +41,9 @@ class Skills extends React.Component {
     };
 
     this.skillChart = this.skillChart.bind(this);
-    this.programmationChart = this.programmationChart.bind(this);
+    this.programmingChart = this.programmingChart.bind(this);
     this.languagesChart = this.languagesChart.bind(this);
-    this.designChart = this.designChart.bind(this);
+    this.artChart = this.artChart.bind(this);
     this.digitalChart = this.digitalChart.bind(this);
     this.traditionnalChart = this.traditionnalChart.bind(this);
     this.fineCraftChart = this.fineCraftChart.bind(this);
@@ -105,13 +105,13 @@ class Skills extends React.Component {
 
     this.chart.data = [
       {
-        country: "Design",
-        litres: 50,
-        description: "Digital\nTraditionnal Art\nFine Craft"
+        country: "Art",
+        litres: 40,
+        description: "Digital\nTraditionnal\nFine Craft"
       },
       {
-        country: "Programmation",
-        litres: 50,
+        country: "Programming",
+        litres: 60,
         description: "Languages\nAlgorithms\nData Structure\nWorkflow"
       }
     ];
@@ -130,13 +130,13 @@ class Skills extends React.Component {
       function(ev) {
         console.log(ev.target["_dataItem"]["_dataContext"]["country"]);
         switch (ev.target["_dataItem"]["_dataContext"]["country"]) {
-          case "Programmation":
-            this.setState({ arbo: ["Skills", "Programmation"] });
-            this.programmationChart();
+          case "Programming":
+            this.setState({ arbo: ["Skills", "Programming"] });
+            this.programmingChart();
             break;
-          case "Design":
-            this.setState({ arbo: ["Skills", "Design"] });
-            this.designChart();
+          case "Art":
+            this.setState({ arbo: ["Skills", "Art"] });
+            this.artChart();
             break;
           default:
             break;
@@ -146,16 +146,16 @@ class Skills extends React.Component {
     );
   }
 
-  programmationChart() {
+  programmingChart() {
     this.chart.dispose();
-    this.setState({ arbo: ["Skills", "Programmation"] });
+    this.setState({ arbo: ["Skills", "Programming"] });
     this.chart = am4core.create("chartdiv", am4charts.PieChart3D);
     this.chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
     this.chart.legend = new am4charts.Legend();
     this.chart.legend.fill = am4core.color("white");
 
-    this.chart.data = programmationData;
+    this.chart.data = programmingData;
 
     let series = this.chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
@@ -170,21 +170,21 @@ class Skills extends React.Component {
         console.log(ev.target["_dataItem"]["_dataContext"]["country"]);
         switch (ev.target["_dataItem"]["_dataContext"]["country"]) {
           case "Languages":
-            this.setState({ arbo: ["Skills", "Programmation", "Languages"] });
+            this.setState({ arbo: ["Skills", "Programming", "Languages"] });
             this.languagesChart();
             break;
           case "Algorithms":
-            this.setState({ arbo: ["Skills", "Programmation", "Algorithms"] });
+            this.setState({ arbo: ["Skills", "Programming", "Algorithms"] });
             this.algorithmsChart();
             break;
           case "Data Structure":
             this.setState({
-              arbo: ["Skills", "Programmation", "Data Structures"]
+              arbo: ["Skills", "Programming", "Data Structures"]
             });
             this.dataStructuresChart();
             break;
           case "Workflow":
-            this.setState({ arbo: ["Skills", "Programmation", "Workflow"] });
+            this.setState({ arbo: ["Skills", "Programming", "Workflow"] });
             this.workflowChart();
             break;
           default:
@@ -249,16 +249,16 @@ class Skills extends React.Component {
     this.chart = this.chart;
   }
 
-  designChart() {
+  artChart() {
     this.chart.dispose();
-    this.setState({ arbo: ["Skills", "Design"] });
+    this.setState({ arbo: ["Skills", "Art"] });
     this.chart = am4core.create("chartdiv", am4charts.PieChart3D);
     this.chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
     this.chart.legend = new am4charts.Legend();
     this.chart.legend.fill = am4core.color("white");
 
-    this.chart.data = designData;
+    this.chart.data = artData;
 
     let series = this.chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
@@ -273,15 +273,15 @@ class Skills extends React.Component {
         console.log(ev.target["_dataItem"]["_dataContext"]["country"]);
         switch (ev.target["_dataItem"]["_dataContext"]["country"]) {
           case "Digital":
-            this.setState({ arbo: ["Skills", "Design", "Digital"] });
+            this.setState({ arbo: ["Skills", "Art", "Digital"] });
             this.digitalChart();
             break;
           case "Traditionnal":
-            this.setState({ arbo: ["Skills", "Design", "Traditionnal"] });
+            this.setState({ arbo: ["Skills", "Art", "Traditionnal"] });
             this.traditionnalChart();
             break;
           case "Fine Crafts":
-            this.setState({ arbo: ["Skills", "Design", "Fine Crafts"] });
+            this.setState({ arbo: ["Skills", "Art", "Fine Crafts"] });
             this.fineCraftChart();
             break;
           default:
@@ -374,18 +374,18 @@ class Skills extends React.Component {
             <div className="circle" />
           </div>
         );
-      } else if (e === "Design") {
+      } else if (e === "Art") {
         return (
-          <div className="arbo-item-middle-level" onClick={this.designChart}>
+          <div className="arbo-item-middle-level" onClick={this.artChart}>
             {e}
             <div className="circle" />
           </div>
         );
-      } else if (e === "Programmation") {
+      } else if (e === "Programming") {
         return (
           <div
             className="arbo-item-middle-level"
-            onClick={this.programmationChart}
+            onClick={this.programmingChart}
           >
             {e}
             <div className="circle" />

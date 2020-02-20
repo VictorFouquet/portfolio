@@ -18,6 +18,6 @@ export default [
     country: "Workflow",
     litres: 15,
     description:
-      "Oriented Object Programmation\nTest Driven Developpement\nVersioning"
+      "Oriented Object Programming\nTest Driven Developpement\nVersioning"
   }
 ];

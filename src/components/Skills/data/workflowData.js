@@ -1,17 +1,17 @@
 export default [
   {
     country: "Oriented Object Programming",
-    litres: 25,
-    description: "Digital Painting\nIllustation\nImage Editing"
+    litres: 55,
+    description: "Class objects\nMVC model\nComponent\nAtomic Design"
   },
   {
     country: "Test Driven Development",
-    litres: 35,
-    description: "Logo\nSVG\nPrototypage"
+    litres: 30,
+    description: "Rspec\n3Kyu CodeWars"
   },
   {
     country: "Versionning",
-    litres: 25,
-    description: "Modeling\nTexturing\nLighting\nRendering"
+    litres: 15,
+    description: "Git\nTeam Working\nAgile method"
   }
 ];

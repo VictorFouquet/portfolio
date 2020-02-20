@@ -183,7 +183,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[0].children[1].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -207,8 +207,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -229,7 +229,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[0].children[0].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -253,8 +253,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -275,7 +275,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[0].children[2].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -299,8 +299,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -377,7 +377,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[1].children[0].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -401,8 +401,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -423,7 +423,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[1].children[1].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -447,8 +447,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -469,7 +469,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[1].children[2].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -493,8 +493,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 
@@ -515,7 +515,7 @@ class SkillsMobile extends React.Component {
         children: graphData[0].children[1].children[3].children.map(function(
           data
         ) {
-          return { value: data.value, name: data.name };
+          return { value: data.value, name: data.name, children: data.children };
         })
       }
     ];
@@ -539,8 +539,8 @@ class SkillsMobile extends React.Component {
     );
     series.nodes.template.label.text = "{name}";
     series.fontSize = 10;
-    series.minRadius = am4core.percent(12);
-    series.maxRadius = am4core.percent(20);
+    series.minRadius = am4core.percent(6);
+    series.maxRadius = am4core.percent(10);
     this.chart = chart;
   }
 

@@ -1,17 +1,17 @@
 export default [
   {
     country: "Searching",
-    litres: 25,
+    litres: 50,
     description: "DFS/BFS\nDijkstra\nA*"
   },
   {
     country: "Sorting",
-    litres: 35,
+    litres: 30,
     description: "Insertion Sort\nMerge Sort\nHeap Sort"
   },
   {
     country: "Parsing",
-    litres: 25,
+    litres: 20,
     description: "RegEx"
   }
 ];

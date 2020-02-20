@@ -1,7 +1,7 @@
 export default [
   {
     country: "PhotoShop",
-    litres: 25,
+    litres: 40,
     description: "Digital Painting\nIllustation\nImage Editing"
   },
   {

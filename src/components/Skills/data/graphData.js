@@ -121,6 +121,7 @@ const graphData = [
               }
             ]
           },
+
           {
             name: "Fine\nCrafts",
             children: [
@@ -128,19 +129,19 @@ const graphData = [
                 name: "Gilding",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Primering",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Gold Leaf",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "Silver Leaf",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "Coper Leaf",
                     value: 56
                   }
                 ]
@@ -149,19 +150,19 @@ const graphData = [
                 name: "Cabinet\nMaking",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Plan",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Lumber",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "Assemblage",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "Finishing",
                     value: 56
                   }
                 ]
@@ -170,19 +171,15 @@ const graphData = [
                 name: "Trompe\nl'Oeil",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Material",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Texture",
                     value: 56
                   },
                   {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Painting",
                     value: 56
                   }
                 ]
@@ -202,19 +199,19 @@ const graphData = [
                 name: "JavaScript",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "React",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "JQuery",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "Ajax",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "JSON",
                     value: 56
                   }
                 ]
@@ -223,19 +220,11 @@ const graphData = [
                 name: "Ruby",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Rails",
                     value: 56
                   },
                   {
-                    name: "Texturing",
-                    value: 56
-                  },
-                  {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "PostgreSQL",
                     value: 56
                   }
                 ]
@@ -244,19 +233,19 @@ const graphData = [
                 name: "HTML/CSS",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "BootStrap",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Sass",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "HTML5",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "CSS3",
                     value: 56
                   }
                 ]
@@ -270,19 +259,19 @@ const graphData = [
                 name: "Searching",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "BFS",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "DFS",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "Dijkstra",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "A Star",
                     value: 56
                   }
                 ]
@@ -291,19 +280,15 @@ const graphData = [
                 name: "Sorting",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Insertion Sort",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Merge Sort",
                     value: 56
                   },
                   {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Heap Sort",
                     value: 56
                   }
                 ]
@@ -312,19 +297,11 @@ const graphData = [
                 name: "Parsing",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Regex",
                     value: 56
                   },
                   {
-                    name: "Texturing",
-                    value: 56
-                  },
-                  {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Missing\nTokens",
                     value: 56
                   }
                 ]
@@ -338,19 +315,15 @@ const graphData = [
                 name: "Linear",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Arrays",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Hash Tables",
                     value: 56
                   },
                   {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Linked Lists",
                     value: 56
                   }
                 ]
@@ -359,19 +332,11 @@ const graphData = [
                 name: "Trees",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Binary",
                     value: 56
                   },
                   {
-                    name: "Texturing",
-                    value: 56
-                  },
-                  {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Black Red",
                     value: 56
                   }
                 ]
@@ -380,19 +345,15 @@ const graphData = [
                 name: "Graphs",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Directed\nUndir.",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Weighted\nUnweig.",
                     value: 56
                   },
                   {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Cyclic\nAcyc.",
                     value: 56
                   }
                 ]
@@ -427,19 +388,19 @@ const graphData = [
                 name: "TDD",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Class\nobjects",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "MVC model",
                     value: 56
                   },
                   {
-                    name: "Lighting",
+                    name: "Component",
                     value: 56
                   },
                   {
-                    name: "Rendering",
+                    name: "Atomic\nDesign",
                     value: 56
                   }
                 ]
@@ -448,19 +409,15 @@ const graphData = [
                 name: "Versionning",
                 children: [
                   {
-                    name: "Modeling",
+                    name: "Git",
                     value: 56
                   },
                   {
-                    name: "Texturing",
+                    name: "Team Working",
                     value: 56
                   },
                   {
-                    name: "Lighting",
-                    value: 56
-                  },
-                  {
-                    name: "Rendering",
+                    name: "Agile method",
                     value: 56
                   }
                 ]

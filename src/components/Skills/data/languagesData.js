@@ -1,12 +1,12 @@
 export default [
   {
     country: "JavaScript",
-    litres: 25,
+    litres: 60,
     description: "React\nJQuery\nAjax\nJSON"
   },
   {
     country: "Ruby",
-    litres: 35,
+    litres: 15,
     description: "Rails\nPostgreSQL"
   },
   {
