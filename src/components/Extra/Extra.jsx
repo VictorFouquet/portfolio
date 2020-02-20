@@ -53,7 +53,7 @@ class Extra extends React.Component {
 
     setTimeout(() => {
       this.setState({ pics: [...provPics], clName: "left-in" });
-    }, 500);
+    }, 600);
   };
 
   handleRightSlide = () => {
@@ -62,7 +62,7 @@ class Extra extends React.Component {
     provPics.push(provPics.shift());
     setTimeout(() => {
       this.setState({ pics: [...provPics], clName: "right-in" });
-    }, 500);
+    }, 600);
   };
 
   render() {
