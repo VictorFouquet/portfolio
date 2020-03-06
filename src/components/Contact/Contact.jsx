@@ -1,12 +1,10 @@
 import React from "react";
 import "./contact.css";
-import MyLogo from "../../svgIcons/MyLogo";
-
-const encode = (data) => {
+const encode = data => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 class Contact extends React.Component {
   constructor(props) {
@@ -37,7 +35,7 @@ class Contact extends React.Component {
           <div id="contact-content">
             <h1 className="contact-title">Contact</h1>
             <div id="contact-wrapper">
-              <form name="contact" onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} id='form-custom'>
                 <h2>
                   <label>Message Me! </label>
                 </h2>
@@ -52,11 +50,11 @@ class Contact extends React.Component {
                 <br />
                 <label>Name </label>
                 <br />
-                <input type="text" name="name" value={name} onChange={this.handleChange}/>
+                <input className='contact-input' type="text" name="name" value={name} onChange={this.handleChange}/>
                 <br />
                 <label>Email </label>
                 <br />
-                <input type="email" name="email" value={email} onChange={this.handleChange}/>
+                <input className='contact-input' type="email" name="email" value={email} onChange={this.handleChange}/>
                 <br />
                 
                 <button className="send-message-button" type="submit">Send</button>

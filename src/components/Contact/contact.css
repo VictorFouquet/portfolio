@@ -43,7 +43,7 @@
   margin-bottom: 1vh;
 }
 
-input {
+.contact-input {
   font-family: "Source Sans Pro", sans-serif;
   color: #d4e1d5d0;
   width: 100%;
@@ -53,7 +53,7 @@ input {
   border: none;
 }
 
-form {
+#form-custom {
   font-family: "Source Sans Pro", sans-serif;
   color: #d4e1d5d0;
   margin: auto;
